@@ -5,10 +5,22 @@
 
 .homeSection {
   margin: 30px auto;
+  position: relative;
 }
 .homeSection__title {
   font-size: 20px;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
+}
+.homeSection__more {
+  font-size: 15px;
+  color: #35c5f0;
+  font-weight: 700;
+  position: absolute;
+  top: 0;
+  right: 10px;
+}
+.homeSection__content {
+  margin-top: 20px;
 }
 
 .menu {
@@ -23,7 +35,6 @@
 }
 .menuItem__img {
   display: block;
-  width: 90px;
 }
 .menuItem__title {
   margin-top: 8px;
@@ -95,6 +106,44 @@
   border: 1px solid #757575;
   border-width: 1px 1px 0 0;
   transform: rotate(45deg);
+}
+
+.todayPromotion {
+  display: flex;
+  gap: 20px;
+}
+
+.todayPromotion__card__image {
+  border-radius: 6px;
+  overflow: hidden;
+}
+.todayPromotion__card__title {
+  font-size: 15px;
+  line-height: 1.3;
+  font-weight: 700;
+  padding: 0 10px 15px;
+}
+.todayPromotion__card__desc {
+  font-size: 13px;
+  line-height: 1.3;
+  padding: 15px 10px 5px;
+}
+
+.premium {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+.premium__card__image {
+  overflow: hidden;
+  border-radius: 6px;
+}
+.premium__card__title {
+  font-size: 13px;
+  line-height: 1.38;
+  color: #424242;
+  margin-bottom: 10px;
+}
+.premium__card__price {
 }
 
 .banner {

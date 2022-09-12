@@ -65,14 +65,41 @@
       </div>
     </header>
     <main class="home">
-      <div>
-        <aside>
-          <h2>스토리</h2>
-          <a href="/"></a>
+      <div class="homeHeader">
+        <aside class="story">
+          <h2 class="a11y">스토리</h2>
+          <a href="/">
+            <img
+              class="story__image"
+              src="https://image.ohou.se/i/bucketplace-v2-development/uploads/cards/projects/166089686285093816.png?gif=1&w=1700&h=1134&c=c&webp=1"
+              alt=""
+            />
+            <div class="story__content">
+              <div>
+                <p class="story__title">
+                  우리답게 채우는, 둘이 사는 집 리모델링기
+                </p>
+                <div class="story__profile">
+                  <img
+                    src="https://image.ohou.se/i/bucketplace-v2-development/uploads/users/profile_images/1541295744_B.jpeg?gif=1&w=36&h=36&c=c&webp=1"
+                    alt=""
+                  />
+                  <span>nurish_life</span>
+                </div>
+              </div>
+              <button class="story__button">보러가기</button>
+            </div>
+          </a>
         </aside>
-        <aside>
-          <h2>배너</h2>
-          <a href=""></a>
+        <aside class="eventBanner">
+          <h2 class="a11y">배너</h2>
+          <a href="">
+            <img
+              class="eventBanner__image"
+              src="https://image.ohou.se/i/bucketplace-v2-development/uploads/banners/home_banner/166262124262191325.png?gif=1&w=1024&webp=1"
+              alt=""
+            />
+          </a>
         </aside>
       </div>
       <nav>
@@ -357,9 +384,231 @@
       <section class="homeSection">
         <h2 class="homeSection__title">오늘의 딜</h2>
         <a class="homeSection__more" href="">더보기</a>
-        <ul>
-          <li>상품</li>
-          <li>목록</li>
+        <ul class="homeSection__content todayDeal">
+          <li>
+            <img
+              class="todayDeal__card__image"
+              src="https://image.ohou.se/i/bucketplace-v2-development/uploads/productions/165786687935539970.jpg?gif=1&w=720&h=720&c=c&q=0.8&webp=1"
+              alt=""
+            />
+            <div class="todayDeal__card__desc">
+              <p class="todayDeal__card__brand">리벤스</p>
+              <p class="todayDeal__card__title">
+                [연휴특가] 버터컬러 출시! 1+1 접이식 멀티 리빙수납 캠핑
+                폴딩박스+우드상판(별도구매)
+              </p>
+              <strong class="todayDeal__card__sale">62%</strong>
+              <strong>14,900</strong>
+              <p class="todayDeal__card__summary">
+                <svg
+                  class="icon"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  preserveAspectRatio="xMidYMid meet"
+                >
+                  <path
+                    fill="currentColor"
+                    fill-rule="evenodd"
+                    d="M12 19.72l-5.677 2.405c-.76.322-1.318-.094-1.247-.906l.533-6.142-4.042-4.656c-.54-.624-.317-1.283.477-1.467l6.006-1.39L11.23 2.28c.426-.707 1.122-.699 1.542 0l3.179 5.282 6.006 1.391c.805.187 1.011.851.477 1.467l-4.042 4.656.533 6.142c.072.822-.497 1.224-1.247.906L12 19.72z"
+                  ></path>
+                </svg>
+                <strong class="todayDeal__card__summary__rating">4.6</strong>
+                리뷰 1,639
+              </p>
+              <svg
+                class="icon"
+                aria-label="무료배송"
+                width="47"
+                height="20"
+                viewBox="0 0 47 20"
+                preserveAspectRatio="xMidYMid meet"
+              >
+                <g fill="none" fill-rule="evenodd">
+                  <rect
+                    width="47"
+                    height="20"
+                    fill="#000"
+                    fill-opacity=".07"
+                    fill-rule="nonzero"
+                    rx="4"
+                  ></rect>
+                  <path
+                    fill="#757575"
+                    d="M12.73 5.38v3.96h-6.6V5.38h6.6zm-2.68 9.43H8.76v-3.25H5v-1.03h8.86v1.03h-3.81v3.25zm1.4-6.49V6.41H7.43v1.91h4.04zm11.08 2.7h-1.42v1.54h2.26v1.02h-8.86v-1.02h2.24v-1.53h-1.1V7.78h5.32V6.65H15.6V5.63h6.66V8.8h-5.33v1.18h5.61v1.04zm-4.53 0v1.54h1.87v-1.53H18zm14.37 3.78h-1.23V9.86h-.8v4.49h-1.2V5.18h1.2v3.66h.8V5h1.23v9.8zm-4.2-2.54h-3.9V6.01h1.27v2.26h1.36V6h1.28v6.26zm-1.27-1.01v-2h-1.36v2h1.36zm14.49 1.71c0 1.13-1.25 1.82-3.41 1.82s-3.42-.7-3.42-1.82 1.25-1.82 3.4-1.82c2.18 0 3.43.7 3.43 1.82zm-3.41-6.05c-.5 1.13-2.1 1.9-3.51 2.1l-.54-1c1.64-.17 3.39-1.06 3.39-2.54V5.2h1.33v.28c0 1.48 1.99 2.47 3.4 2.53l-.55 1.01c-1.31-.18-3.03-.97-3.52-2.1zm4.42 3.78h-8.86V9.66h3.79V8.4h1.29v1.26h3.78v1.03zm-2.33 2.27c0-.5-.83-.8-2.1-.8s-2.08.3-2.08.8c0 .51.81.8 2.08.8s2.1-.29 2.1-.8z"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+          </li>
+          <li>
+            <img
+              class="todayDeal__card__image"
+              src="https://image.ohou.se/i/bucketplace-v2-development/uploads/productions/165786687935539970.jpg?gif=1&w=720&h=720&c=c&q=0.8&webp=1"
+              alt=""
+            />
+            <div class="todayDeal__card__desc">
+              <p class="todayDeal__card__brand">리벤스</p>
+              <p class="todayDeal__card__title">
+                [연휴특가] 버터컬러 출시! 1+1 접이식 멀티 리빙수납 캠핑
+                폴딩박스+우드상판(별도구매)
+              </p>
+              <strong class="todayDeal__card__sale">62%</strong>
+              <strong>14,900</strong>
+              <p class="todayDeal__card__summary">
+                <svg
+                  class="icon"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  preserveAspectRatio="xMidYMid meet"
+                >
+                  <path
+                    fill="currentColor"
+                    fill-rule="evenodd"
+                    d="M12 19.72l-5.677 2.405c-.76.322-1.318-.094-1.247-.906l.533-6.142-4.042-4.656c-.54-.624-.317-1.283.477-1.467l6.006-1.39L11.23 2.28c.426-.707 1.122-.699 1.542 0l3.179 5.282 6.006 1.391c.805.187 1.011.851.477 1.467l-4.042 4.656.533 6.142c.072.822-.497 1.224-1.247.906L12 19.72z"
+                  ></path>
+                </svg>
+                <strong class="todayDeal__card__summary__rating">4.6</strong>
+                리뷰 1,639
+              </p>
+              <svg
+                class="icon"
+                aria-label="무료배송"
+                width="47"
+                height="20"
+                viewBox="0 0 47 20"
+                preserveAspectRatio="xMidYMid meet"
+              >
+                <g fill="none" fill-rule="evenodd">
+                  <rect
+                    width="47"
+                    height="20"
+                    fill="#000"
+                    fill-opacity=".07"
+                    fill-rule="nonzero"
+                    rx="4"
+                  ></rect>
+                  <path
+                    fill="#757575"
+                    d="M12.73 5.38v3.96h-6.6V5.38h6.6zm-2.68 9.43H8.76v-3.25H5v-1.03h8.86v1.03h-3.81v3.25zm1.4-6.49V6.41H7.43v1.91h4.04zm11.08 2.7h-1.42v1.54h2.26v1.02h-8.86v-1.02h2.24v-1.53h-1.1V7.78h5.32V6.65H15.6V5.63h6.66V8.8h-5.33v1.18h5.61v1.04zm-4.53 0v1.54h1.87v-1.53H18zm14.37 3.78h-1.23V9.86h-.8v4.49h-1.2V5.18h1.2v3.66h.8V5h1.23v9.8zm-4.2-2.54h-3.9V6.01h1.27v2.26h1.36V6h1.28v6.26zm-1.27-1.01v-2h-1.36v2h1.36zm14.49 1.71c0 1.13-1.25 1.82-3.41 1.82s-3.42-.7-3.42-1.82 1.25-1.82 3.4-1.82c2.18 0 3.43.7 3.43 1.82zm-3.41-6.05c-.5 1.13-2.1 1.9-3.51 2.1l-.54-1c1.64-.17 3.39-1.06 3.39-2.54V5.2h1.33v.28c0 1.48 1.99 2.47 3.4 2.53l-.55 1.01c-1.31-.18-3.03-.97-3.52-2.1zm4.42 3.78h-8.86V9.66h3.79V8.4h1.29v1.26h3.78v1.03zm-2.33 2.27c0-.5-.83-.8-2.1-.8s-2.08.3-2.08.8c0 .51.81.8 2.08.8s2.1-.29 2.1-.8z"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+          </li>
+          <li>
+            <img
+              class="todayDeal__card__image"
+              src="https://image.ohou.se/i/bucketplace-v2-development/uploads/productions/165786687935539970.jpg?gif=1&w=720&h=720&c=c&q=0.8&webp=1"
+              alt=""
+            />
+            <div class="todayDeal__card__desc">
+              <p class="todayDeal__card__brand">리벤스</p>
+              <p class="todayDeal__card__title">
+                [연휴특가] 버터컬러 출시! 1+1 접이식 멀티 리빙수납 캠핑
+                폴딩박스+우드상판(별도구매)
+              </p>
+              <strong class="todayDeal__card__sale">62%</strong>
+              <strong>14,900</strong>
+              <p class="todayDeal__card__summary">
+                <svg
+                  class="icon"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  preserveAspectRatio="xMidYMid meet"
+                >
+                  <path
+                    fill="currentColor"
+                    fill-rule="evenodd"
+                    d="M12 19.72l-5.677 2.405c-.76.322-1.318-.094-1.247-.906l.533-6.142-4.042-4.656c-.54-.624-.317-1.283.477-1.467l6.006-1.39L11.23 2.28c.426-.707 1.122-.699 1.542 0l3.179 5.282 6.006 1.391c.805.187 1.011.851.477 1.467l-4.042 4.656.533 6.142c.072.822-.497 1.224-1.247.906L12 19.72z"
+                  ></path>
+                </svg>
+                <strong class="todayDeal__card__summary__rating">4.6</strong>
+                리뷰 1,639
+              </p>
+              <svg
+                class="icon"
+                aria-label="무료배송"
+                width="47"
+                height="20"
+                viewBox="0 0 47 20"
+                preserveAspectRatio="xMidYMid meet"
+              >
+                <g fill="none" fill-rule="evenodd">
+                  <rect
+                    width="47"
+                    height="20"
+                    fill="#000"
+                    fill-opacity=".07"
+                    fill-rule="nonzero"
+                    rx="4"
+                  ></rect>
+                  <path
+                    fill="#757575"
+                    d="M12.73 5.38v3.96h-6.6V5.38h6.6zm-2.68 9.43H8.76v-3.25H5v-1.03h8.86v1.03h-3.81v3.25zm1.4-6.49V6.41H7.43v1.91h4.04zm11.08 2.7h-1.42v1.54h2.26v1.02h-8.86v-1.02h2.24v-1.53h-1.1V7.78h5.32V6.65H15.6V5.63h6.66V8.8h-5.33v1.18h5.61v1.04zm-4.53 0v1.54h1.87v-1.53H18zm14.37 3.78h-1.23V9.86h-.8v4.49h-1.2V5.18h1.2v3.66h.8V5h1.23v9.8zm-4.2-2.54h-3.9V6.01h1.27v2.26h1.36V6h1.28v6.26zm-1.27-1.01v-2h-1.36v2h1.36zm14.49 1.71c0 1.13-1.25 1.82-3.41 1.82s-3.42-.7-3.42-1.82 1.25-1.82 3.4-1.82c2.18 0 3.43.7 3.43 1.82zm-3.41-6.05c-.5 1.13-2.1 1.9-3.51 2.1l-.54-1c1.64-.17 3.39-1.06 3.39-2.54V5.2h1.33v.28c0 1.48 1.99 2.47 3.4 2.53l-.55 1.01c-1.31-.18-3.03-.97-3.52-2.1zm4.42 3.78h-8.86V9.66h3.79V8.4h1.29v1.26h3.78v1.03zm-2.33 2.27c0-.5-.83-.8-2.1-.8s-2.08.3-2.08.8c0 .51.81.8 2.08.8s2.1-.29 2.1-.8z"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+          </li>
+          <li>
+            <img
+              class="todayDeal__card__image"
+              src="https://image.ohou.se/i/bucketplace-v2-development/uploads/productions/165786687935539970.jpg?gif=1&w=720&h=720&c=c&q=0.8&webp=1"
+              alt=""
+            />
+            <div class="todayDeal__card__desc">
+              <p class="todayDeal__card__brand">리벤스</p>
+              <p class="todayDeal__card__title">
+                [연휴특가] 버터컬러 출시! 1+1 접이식 멀티 리빙수납 캠핑
+                폴딩박스+우드상판(별도구매)
+              </p>
+              <strong class="todayDeal__card__sale">62%</strong>
+              <strong>14,900</strong>
+              <p class="todayDeal__card__summary">
+                <svg
+                  class="icon"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  preserveAspectRatio="xMidYMid meet"
+                >
+                  <path
+                    fill="currentColor"
+                    fill-rule="evenodd"
+                    d="M12 19.72l-5.677 2.405c-.76.322-1.318-.094-1.247-.906l.533-6.142-4.042-4.656c-.54-.624-.317-1.283.477-1.467l6.006-1.39L11.23 2.28c.426-.707 1.122-.699 1.542 0l3.179 5.282 6.006 1.391c.805.187 1.011.851.477 1.467l-4.042 4.656.533 6.142c.072.822-.497 1.224-1.247.906L12 19.72z"
+                  ></path>
+                </svg>
+                <strong class="todayDeal__card__summary__rating">4.6</strong>
+                리뷰 1,639
+              </p>
+              <svg
+                class="icon"
+                aria-label="무료배송"
+                width="47"
+                height="20"
+                viewBox="0 0 47 20"
+                preserveAspectRatio="xMidYMid meet"
+              >
+                <g fill="none" fill-rule="evenodd">
+                  <rect
+                    width="47"
+                    height="20"
+                    fill="#000"
+                    fill-opacity=".07"
+                    fill-rule="nonzero"
+                    rx="4"
+                  ></rect>
+                  <path
+                    fill="#757575"
+                    d="M12.73 5.38v3.96h-6.6V5.38h6.6zm-2.68 9.43H8.76v-3.25H5v-1.03h8.86v1.03h-3.81v3.25zm1.4-6.49V6.41H7.43v1.91h4.04zm11.08 2.7h-1.42v1.54h2.26v1.02h-8.86v-1.02h2.24v-1.53h-1.1V7.78h5.32V6.65H15.6V5.63h6.66V8.8h-5.33v1.18h5.61v1.04zm-4.53 0v1.54h1.87v-1.53H18zm14.37 3.78h-1.23V9.86h-.8v4.49h-1.2V5.18h1.2v3.66h.8V5h1.23v9.8zm-4.2-2.54h-3.9V6.01h1.27v2.26h1.36V6h1.28v6.26zm-1.27-1.01v-2h-1.36v2h1.36zm14.49 1.71c0 1.13-1.25 1.82-3.41 1.82s-3.42-.7-3.42-1.82 1.25-1.82 3.4-1.82c2.18 0 3.43.7 3.43 1.82zm-3.41-6.05c-.5 1.13-2.1 1.9-3.51 2.1l-.54-1c1.64-.17 3.39-1.06 3.39-2.54V5.2h1.33v.28c0 1.48 1.99 2.47 3.4 2.53l-.55 1.01c-1.31-.18-3.03-.97-3.52-2.1zm4.42 3.78h-8.86V9.66h3.79V8.4h1.29v1.26h3.78v1.03zm-2.33 2.27c0-.5-.83-.8-2.1-.8s-2.08.3-2.08.8c0 .51.81.8 2.08.8s2.1-.29 2.1-.8z"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+          </li>
         </ul>
       </section>
       <section class="homeSection">
@@ -480,7 +729,6 @@
           </li>
         </ul>
       </section>
-      <aside>banner</aside>
       <section class="homeSection">
         <h2 class="homeSection__title">유저들의 인테리어 시공리뷰</h2>
         <a class="homeSection__more" href=""> 인테리어 전문가 더 찾기</a>
@@ -983,7 +1231,7 @@
             <p class="premium__card__title">
               [10% 쿠폰][연휴특가][빠른배송] 호랑 커트러리 테이블세트
             </p>
-            <strong class="premium__card__price">52,000</strong>
+            <strong>52,000</strong>
           </li>
           <li>
             <img
@@ -994,7 +1242,7 @@
             <p class="premium__card__title">
               [10% 쿠폰][연휴특가][빠른배송] 호랑 커트러리 테이블세트
             </p>
-            <strong class="premium__card__price">52,000</strong>
+            <strong>52,000</strong>
           </li>
           <li>
             <img
@@ -1006,7 +1254,7 @@
               [10% 쿠폰][연휴특가][빠른배송] 호랑 커트러리 테이블세트
             </p>
             <strong class="premium__card__sale">16%</strong>
-            <strong class="premium__card__price">52,000</strong>
+            <strong>52,000</strong>
           </li>
           <li>
             <img
@@ -1017,7 +1265,7 @@
             <p class="premium__card__title">
               [10% 쿠폰][연휴특가][빠른배송] 호랑 커트러리 테이블세트
             </p>
-            <strong class="premium__card__price">52,000</strong>
+            <strong>52,000</strong>
           </li>
           <li>
             <img
@@ -1047,26 +1295,92 @@
       <section class="homeSection">
         <h2 class="homeSection__title">베스트</h2>
         <nav>
-          <ul>
-            <li>전체</li>
-            <li>가구</li>
-            <li>패브릭</li>
-            <li>조명</li>
-            <li>가전</li>
-            <li>주방용품</li>
-            <li>데코.식물</li>
-            <li>수납.정리</li>
-            <li>생활용품</li>
-            <li>생필품</li>
-            <li>공구.DIY</li>
-            <li>인테리어시공</li>
-            <li>반려동물</li>
-            <li>등등...</li>
+          <ul class="best__nav">
+            <li class="best__nav__title"><a>전체</a></li>
+            <li class="best__nav__title"><a>가구</a></li>
+            <li class="best__nav__title"><a>패브릭</a></li>
+            <li class="best__nav__title"><a>조명</a></li>
+            <li class="best__nav__title"><a>가전</a></li>
+            <li class="best__nav__title"><a>주방용품</a></li>
+            <li class="best__nav__title"><a>데코.식물</a></li>
+            <li class="best__nav__title"><a>수납.정리</a></li>
+            <li class="best__nav__title"><a>생활용품</a></li>
+            <li class="best__nav__title"><a>생필품</a></li>
+            <li class="best__nav__title"><a>공구.DIY</a></li>
+            <li class="best__nav__title"><a>인테리어시공</a></li>
+            <li class="best__nav__title"><a>반려동물</a></li>
+            <li class="best__nav__title"><a>캠핑용품</a></li>
+            <li class="best__nav__title"><a>실내운동</a></li>
+            <li class="best__nav__title"><a>유아.아동</a></li>
+            <li class="best__nav__title"><a>렌탈</a></li>
+            <li class="best__nav__title"><a>식품</a></li>
           </ul>
         </nav>
-        <ul>
-          <li>상품</li>
-          <li>목록</li>
+        <ul class="bestseller">
+          <li>
+            <img
+              class="bestseller__card__image"
+              src="https://image.ohou.se/i/bucketplace-v2-development/uploads/productions/1554432441250_K6wX5dopzz.jpg?gif=1&w=640&webp=1"
+              alt=""
+            />
+            <p class="bestseller__card__title">
+              [10% 쿠폰][연휴특가][빠른배송] 호랑 커트러리 테이블세트
+            </p>
+            <strong class="bestseller__card__price">59%</strong>
+            <strong>52,000</strong>
+          </li>
+          <li>
+            <img
+              class="bestseller__card__image"
+              src="https://image.ohou.se/i/bucketplace-v2-development/uploads/productions/1554432441250_K6wX5dopzz.jpg?gif=1&w=640&webp=1"
+              alt=""
+            />
+            <p class="bestseller__card__title">
+              [10% 쿠폰][연휴특가][빠른배송] 호랑 커트러리 테이블세트
+            </p>
+            <strong class="bestseller__card__price">59%</strong>
+            <strong>52,000</strong>
+          </li>
+          <li>
+            <img
+              class="bestseller__card__image"
+              src="https://image.ohou.se/i/bucketplace-v2-development/uploads/productions/1554432441250_K6wX5dopzz.jpg?gif=1&w=640&webp=1"
+              alt=""
+            />
+            <p class="bestseller__card__title">
+              [10% 쿠폰][연휴특가][빠른배송] 호랑 커트러리 테이블세트
+            </p>
+            <strong class="bestseller__card__price">59%</strong>
+            <strong>52,000</strong>
+          </li>
+          <li>
+            <div class="bestseller__more">
+              베스트셀러 더보기
+              <svg
+                class="bestseller__more__icon"
+                width="40"
+                height="40"
+                viewBox="0 0 40 40"
+                preserveAspectRatio="xMidYMid meet"
+              >
+                <g
+                  fill="none"
+                  fill-rule="evenodd"
+                  transform="rotate(-180 20 20)"
+                >
+                  <circle cx="20" cy="20" r="20" fill="#FFF"></circle>
+                  <g fill="#424242">
+                    <path
+                      d="M24.303 27.89l-1.414 1.413-9.192-9.192 1.414-1.414z"
+                    ></path>
+                    <path
+                      d="M22.89 10.697l1.413 1.414-9.192 9.192-1.414-1.414z"
+                    ></path>
+                  </g>
+                </g>
+              </svg>
+            </div>
+          </li>
         </ul>
       </section>
       <section class="banner">
